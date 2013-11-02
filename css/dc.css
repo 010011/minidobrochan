@@ -1,0 +1,172 @@
+html, body, table, td {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+body {
+  margin: 0 auto;
+  line-height: 1.33;
+  font-family: "Trebuchet MS", Trebuchet, tahoma, serif;
+  font-size: 25px;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  border: none;
+}
+
+a img {
+  border: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+table {
+  width: 100%;
+}
+
+.header {
+  background-color: #eee;
+}
+
+.footer td, .header td {
+  text-align: center;
+  width: 50%;
+  background-color: #eef;
+  border: 2px solid #dde;
+}
+
+.footer td:hover, .header td:hover {
+  background-color: #dde;
+  border: 2px solid #ccd;
+}
+
+.footer a, .header a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.thread, .post {
+  background-color: #eee;
+  border: 1px solid #ddd;
+}
+
+.separator {
+  height: 12px;
+}
+
+.location {
+  text-align: center;
+}
+
+.subject {
+  color: #080;
+  font-weight: bold;
+  display: block;
+  margin: 0 4px;
+}
+
+.name {
+  color: #088;
+  margin-bottom: 2px;
+  font-size: 18px;
+  margin-left: 4px;
+}
+
+.datetime {
+  font-size: 16px;
+}
+
+.number {
+  color: #d44;
+  font-size: 16px;
+  margin-left: 4px;
+}
+
+.post-count {
+  margin-left: 4px;
+}
+
+.open {
+  display: block;
+  text-align: center;
+}
+
+.thumb {
+  display: block;
+  float: left;
+  max-width: 205px;
+  margin: 0 20px 20px 4px;
+}
+
+.thumb:nth-child(even) {
+  clear: both;
+}
+
+.message {
+  clear: both;
+  margin-left: 4px;
+}
+
+.message a {
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+.size {
+  font-size: 16px;
+  white-space: nowrap;
+  display: block;
+  color: #000;
+}
+
+.spoiler {
+  background: #000;
+  color: #fff;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.reply:link {
+  color: #008;
+}
+
+.quote {
+  color: #080;
+}
+
+.scroll {
+  position: fixed;
+  left: auto;
+  right: 0;
+  display: block;
+  width: 40px;
+  height: 38px;
+  color: black;
+  background-color: rgba(255,255,255,0.5);
+  text-align: center;
+  line-height: 38px;
+}
+
+.top {
+  top: 0;
+}
+
+.bottom {
+  top: auto;
+  bottom: 0;
+}
