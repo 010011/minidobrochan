@@ -15,7 +15,7 @@
 <a name="top"></a>
 <table>
   <tr class="header">
-    <td><a href="/index.php?board={$board}">К доске</a></td>
+    <td><a href="/{$board}/">К доске</a></td>
     <td><a href="/">К списку досок</a></td>
   </tr>
 
@@ -55,7 +55,7 @@
   <tr class="separator"><td colspan=2><a name="bottom"></a></td></div>
 
   <tr class="footer">
-    <td><a href="/index.php?board={$board}">К доске</a></td>
+    <td><a href="/{$board}/">К доске</a></td>
     <td><a href="/">К списку досок</a></td>
   </tr>
 </table>

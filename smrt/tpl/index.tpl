@@ -43,7 +43,7 @@
     {foreach from=$threads item=t}
       <tr>
         <td colspan=2 class="thread">
-          <a href="/thread.php?board={$board}&amp;thread={$t->display_id}">
+          <a href="/{$board}/res/{$t->display_id}/">
             <span class='subject'>{$t->title}</span>
           </a>
           <span class="post-count">[{$t->posts_count}]</span><br>
@@ -55,7 +55,7 @@
           <div class="message">
             {$t->posts[0]->message|truncate:200:"...":false}
           </div>
-          <a class="open" target="_blank" href="/thread.php?board={$board}&amp;thread={$t->display_id}">&raquo;</a>
+          <a class="open" target="_blank" href="/{$board}/res/{$t->display_id}/">&raquo;</a>
         </td>
       </tr>
       <tr class="separator"><td colspan=2></td></tr>
@@ -71,12 +71,12 @@
       {if $page == 0}
         <td><a>Назад</a></td>
       {else}
-        <td><a href="/index.php?board={$board}&amp;page={$page-1}"><span>Назад</span></a></td>
+        <td><a href="/{$board}/{$page-1}/"><span>Назад</span></a></td>
       {/if}
       {if $page == $page_count}
         <td><a>Вперед</a></td>
       {else}
-        <td><a href="/index.php?board={$board}&amp;page={$page+1}"><span>Вперед</span></a></td>
+        <td><a href="/{$board}/{$page+1}/"><span>Вперед</span></a></td>
       {/if}
   {/if}
 </table>

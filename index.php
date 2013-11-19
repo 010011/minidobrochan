@@ -29,7 +29,7 @@
   foreach($threads as $t) {
     if ($t->posts[0]->files) {
       $t->posts[0]->files[0]->thumb = SERV . $t->posts[0]->files[0]->thumb;//cached_img($t->posts[0]->files[0]->thumb, THUMB_PATH, THUMB_DIR);
-      $t->posts[0]->files[0]->src = SITE . 'img.php?url=' . urlencode($t->posts[0]->files[0]->src);
+      $t->posts[0]->files[0]->src = SITE . 'img/' . $t->posts[0]->files[0]->src;
     }
     $t->posts[0]->message = str_replace("\n", '<br>', $t->posts[0]->message);
     if (!$t->title) {

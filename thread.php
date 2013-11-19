@@ -33,7 +33,7 @@
     if ($p->files) {
       foreach($p->files as $f) {
         $f->thumb = SERV . $f->thumb;//cached_img($f->thumb, THUMB_PATH, THUMB_DIR);
-        $f->src = SITE . 'img.php?url=' . urlencode($f->src);
+        $f->src = SITE . 'img/' . $f->src;
       }
     }
     $p->message = markup($p->message);

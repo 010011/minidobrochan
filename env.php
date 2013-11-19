@@ -10,4 +10,16 @@
   define('COOKIE_FILE', ROOT . 'cookies.txt'); // cookie file
 
   date_default_timezone_set('UTC');
+
+  /* Also, add this to your host directives (NGinx example):
+
+  port_in_redirect off;
+  location / {
+    index index.html index.php;
+		rewrite ^([^.]*[^/])$ $1/ permanent;
+		rewrite ^/(.*)/res/(\d*)/$ /thread.php?board=$1&thread=$2;
+		rewrite ^/(.*)/(\d*)/$ /index.php?board=$1&page=$2;
+		rewrite ^/(.*)/$ /index.php?board=$1;
+  }
+   */
 ?>
