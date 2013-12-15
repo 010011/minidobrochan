@@ -4,8 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Wait, oh shi~</title>
-	<link rel="stylesheet" href="./css/bootstrap.css">
-  <link rel="stylesheet" href="./css/dc.css">
+  <link rel="stylesheet" href="/css/dc.css">
 </head>
 
 <body>
